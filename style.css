@@ -21,6 +21,9 @@
 
 li {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 a {
@@ -51,11 +54,9 @@ header {
 }
 
 nav {
-    background-color: brown;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
     align-items: center;
-    padding: 0 5%;
 }
 
 .nav-left {
@@ -69,7 +70,14 @@ nav {
 }
 
 main {
-    background-color: aqua;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.main-right {
+    display: grid;
 }
 /* placeholder */
 img {
