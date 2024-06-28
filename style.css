@@ -63,14 +63,16 @@ li {
     gap: 1rem;
 }
 
-a {
+ul > a {
     color: var(--text-side);
     text-decoration: none;
     padding: 0.1rem;
 }
 
-a:hover {
+ul > a:hover {
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
 }
 
 header,
@@ -95,14 +97,13 @@ header > form > button {
     border: none;
     cursor: pointer;
 }
-
-header> form > button > img {
-    height: 24px;
+header img {
+    height: 32px;
 }
 
 header > form > input {
     border-radius: 1rem;
-    width: 80%;
+    width: 90%;
     border: none;
     padding: 0.5rem  1rem;
     margin-left: 1rem;
@@ -117,8 +118,21 @@ header > form > input:focus {
 
 .account {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    color: #262626;
+    gap: 1rem;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.account > a {
+    color: #262626;
+    text-decoration: none;
+}
+
+.account > a:hover {
+    text-decoration: underline;
 }
 
 nav {
